@@ -1,0 +1,2 @@
+<input type="text" placeholder="Enter City Name..." [(ngModel)]="userInput" (change)="appChild.onInputChange()">
+<app-table [userInput]="userInput" #appChild></app-table>

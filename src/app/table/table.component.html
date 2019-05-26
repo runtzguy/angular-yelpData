@@ -1,0 +1,21 @@
+
+<table style="width:100%">
+  <tr>
+    <th scope="col">Business ID</th>
+    <th scope="col">Business Name</th> 
+    <th scope="col">City</th>
+    <th scope="col">Rating</th>
+    <th scope="col">Reviews</th>
+  </tr>
+  <tr *ngIf="!userInput">No input...</tr>
+  <tr *ngIf="!businesses && userInput">Loading...</tr>
+  <ng-container *ngIf="userInput"> 
+    <tr *ngFor="let business of businesses">
+      <td><img src={{business.image_url}}></td>
+      <td>{{business.name}}</td>
+      <td>{{business.location.city}}</td>
+      <td>{{business.rating}}</td>
+      <td>{{business.review_count}}</td>
+    </tr>
+  </ng-container>
+</table>
