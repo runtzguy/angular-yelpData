@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     font-family: 'Asap', sans-serif;
+    color: rgba(0, 0, 0, 0.486);
+    box-sizing: content-box;
+    
+}
+body { 
+    background-color: #e21802;
+    text-align: center;
 
 }

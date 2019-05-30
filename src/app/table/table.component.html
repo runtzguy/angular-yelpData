@@ -1,7 +1,7 @@
 
-<table style="width:100%">
+<table>
   <tr>
-    <th scope="col">Business ID</th>
+    <th scope="col">Business Image</th>
     <th scope="col">Business Name</th> 
     <th scope="col">City</th>
     <th scope="col">Rating</th>
@@ -9,13 +9,13 @@
   </tr>
   <tr *ngIf="!userInput">No input...</tr>
   <tr *ngIf="!businesses && userInput">Loading...</tr>
-  <ng-container *ngIf="userInput"> 
+  <ng-container *ngIf="userInput && !httpRequestCodes[requestCode]"> 
     <tr *ngFor="let business of businesses">
-      <td><img src={{business.image_url}}></td>
-      <td>{{business.name}}</td>
-      <td>{{business.location.city}}</td>
-      <td>{{business.rating}}</td>
-      <td>{{business.review_count}}</td>
+      <td width="250"><img src={{business.image_url}}></td>
+      <td width="100">{{business.name}}</td>
+      <td width="50">{{business.location.city}}</td>
+      <td width="50">{{business.rating}}</td>
+      <td width="50">{{business.review_count}}</td>
     </tr>
   </ng-container>
 </table>
