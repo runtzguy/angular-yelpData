@@ -1,5 +1,7 @@
 <form [formGroup]="form" (ngSubmit)="updateForm($event)">
-    <input type="text" placeholder="Enter City Name..." formControlName="Location">
-    <button type="submit" [disabled]="!form.valid"><i class="fas fa-search"></i></button>
+    <div>
+        <input type="text" placeholder="Enter City Name..." formControlName="Location">
+        <button type="submit" [disabled]="!form.valid"><i class="fas fa-search"></i></button>
+    </div>
 </form>
 <app-table></app-table>

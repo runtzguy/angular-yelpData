@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 * {
-    font-family: 'Asap', sans-serif;
-    color: rgba(0, 0, 0, 0.486);
     box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
     
 }
 body { 
     background-color: #e21802;
-    text-align: center;
-
+    font-family: 'Asap', sans-serif;
+    color: rgba(0, 0, 0, 0.486);
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    margin-top: 30px;
 }

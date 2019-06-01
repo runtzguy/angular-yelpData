@@ -1,13 +1,20 @@
-h1 span {
+
+div{
+    display: flex;
+}
+h1{
+    
     color: black;
     font-family: Verdana;
     text-shadow: 2px 2px 10px white;
     font-size: 30px;
+    margin: 0 auto;
 }
-div{
-    display: inline-flex;
-}
-div i{
+i {
     color: rgb(235, 235, 235);
     text-shadow: 1px 1px 2px black;
+    padding-left: 10px;
+    width: 0.5em;
+
 }
+

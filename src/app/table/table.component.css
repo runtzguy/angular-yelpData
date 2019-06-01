@@ -1,21 +1,19 @@
-table, td, th {
+/* table, td, th {
    border: 2px solid black;
     
 }
-table{
-    border: 2px solid black;
-    background-color: rgb(235, 232, 232);
-    width: 80%;
-    margin-left: 10%;
-    border-collapse: collapse;
-    
-}
+
 td, th {
     align-content: center;
     text-align: center;
-}
+} */
 
 img {
     height: 150px;
     width: 200px;
+}
+table{
+    
+    background-color: rgb(235, 232, 232);
+    
 }
